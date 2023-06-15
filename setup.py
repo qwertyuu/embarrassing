@@ -1,12 +1,18 @@
 from setuptools import setup, find_packages
 
+
+with open('README.md', 'r', encoding='utf-8') as fh:
+    long_description = fh.read()
+
 setup(
     name="embarrassing",
-    version="0.0.1",
+    version="0.0.11",
     description="A package to embarrassingly parallelize your code",
     author="Raphaël Côté",
     author_email="cotlarrc@gmail.com",
-    # url="<package-url>",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url="https://github.com/qwertyuu/embarrassing",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
